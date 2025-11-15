@@ -2,7 +2,8 @@
 softdep qti_dmof_scmi pre: qcom_scmi_client
 softdep cpu_mpam pre: mpam
 softdep q6_notifier_dlkm pre: qcom_q6v5_pas
-softdep qti_fctl_scmi pre: qcom_scmi_client
+softdep sia91xx_dlkm pre: aw882xx_dlkm
+softdep c1dcvs_scmi_v2 pre: qcom_scmi_client
 softdep msm_video pre: subsys-pil-tz msm-mmrm
 softdep mpam pre: qcom_scmi_client
 softdep lpass_bt_swr_dlkm pre: bt_fm_swr
@@ -13,7 +14,7 @@ softdep spcom pre: spss_utils
 softdep msm_eva pre: msm-mmrm
 softdep msm_eva pre: synx-driver
 softdep msm_eva pre: frpc-adsprpc
-softdep ipclite pre: qcom_hwspinlock
+softdep dynpf_scmi pre: qcom_scmi_client
 softdep qsee_ipc_irq_bridge pre: qcom_ipcc
 softdep platform_mpam pre: mpam
 softdep slc_mpam pre: mpam
@@ -21,6 +22,7 @@ softdep dwc3_msm pre: phy-generic phy-msm-snps-hs phy-msm-ssusb-qmp eud
 softdep machine_dlkm pre: btfmcodec
 softdep ipam pre: subsys-pil-tz
 softdep ipam pre: qcom-arm-smmu-mod
+softdep fs19xx_dlkm pre: sia91xx_dlkm
 softdep memlat pre: qcom_scmi_client
 softdep spss_utils pre: qcom_spss
 softdep llcc_heuristics pre: llcc_qcom
